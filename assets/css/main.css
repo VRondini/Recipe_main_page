@@ -14,6 +14,7 @@ body {
   align-items: center;
   height: 100vh;
   margin: 0;
+  box-sizing: border-box;
 }
 
 .attribution {
@@ -24,12 +25,14 @@ body {
 .central-white-overlay {
   background-color: white;
   border-radius: 10px;
-  padding: 40px 40px 40px;
+  padding: 40px;
   height: auto;
-  width: 550px;
+  width: 90%;
+  max-width: 550px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  box-sizing: border-box;
 }
 
 .recipe-image {
@@ -57,7 +60,7 @@ body {
 
 .preparation-mode {
   background-color: hsl(330, 100%, 98%);
-  padding: 20px 20px 20px;
+  padding: 20px;
   border-radius: 10px;
   margin-bottom: 30px;
 }
@@ -99,7 +102,7 @@ li span {
 }
 
 hr {
-  margin: 20px 0 20px 0;
+  margin: 20px 0;
   border: 1px solid hsl(30, 18%, 87%);
 }
 
@@ -171,6 +174,42 @@ hr {
 
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 768px) {
+  .recipe-title {
+    font-size: 28px;
+  }
+  .central-white-overlay {
+    padding: 20px;
+    width: 100%;
+  }
+  .preparation-mode-title {
+    font-size: 16px;
+  }
+  .nutrition-table th {
+    padding-left: 10px;
+  }
+  .nutrition-table th,
+  .nutrition-table td {
+    font-size: 16px;
+  }
+}
+@media (max-width: 480px) {
+  .recipe-title {
+    font-size: 24px;
+  }
+  .recipe-synopsis,
+  .nutrition-synopsis {
+    font-size: 12px;
+  }
+  .preparation-mode-title {
+    font-size: 14px;
+  }
+  .nutrition-table th,
+  .nutrition-table td {
+    font-size: 14px;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

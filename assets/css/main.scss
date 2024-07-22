@@ -8,7 +8,7 @@
     src: url(../fonts/outfit/Outfit-VariableFont_wght.ttf);
 }
 
-body{
+body {
     background-color: hsl(30, 54%, 90%);
     display: flex;
     flex-direction: column;
@@ -16,6 +16,7 @@ body{
     align-items: center;
     height: 100vh;
     margin: 0;
+    box-sizing: border-box;
 }
 
 .attribution {
@@ -23,30 +24,32 @@ body{
     text-align: center;
 }
 
-.central-white-overlay{
+.central-white-overlay {
     background-color: white;
     border-radius: 10px;
-    padding: 40px 40px 40px;
+    padding: 40px;
     height: auto;
-    width: 550px;
+    width: 90%;
+    max-width: 550px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    box-sizing: border-box;
 }
 
-.recipe-image{
+.recipe-image {
     max-width: 100%;
     height: auto;
     border-radius: 10px;
     padding: 0 0 20px;
 }
 
-.recipe-title{
+.recipe-title {
     font-family: TitleFont;
     font-weight: 400;
     font-size: 34px;
     color: hsl(24, 5%, 18%);
-    margin-bottom:20px;
+    margin-bottom: 20px;
 }
 
 .recipe-synopsis {
@@ -57,21 +60,21 @@ body{
     margin-bottom: 30px;
 }
 
-.preparation-mode{
+.preparation-mode {
     background-color: hsl(330, 100%, 98%);
-    padding: 20px 20px 20px;
+    padding: 20px;
     border-radius: 10px;
     margin-bottom: 30px;
 }
 
-.preparation-mode-title{
+.preparation-mode-title {
     color: hsl(332, 51%, 32%);
     font-family: TextFont;
     font-size: 18px;
     font-weight: 700;
 }
 
-.preparation-mode li{
+.preparation-mode li {
     position: relative;
     left: -20px;
     color: hsl(332, 51%, 32%);
@@ -86,7 +89,7 @@ li span {
     font-size: 14px;
 }
 
-.ingredients-title{
+.ingredients-title {
     font-family: TitleFont;
     font-size: 24px;
     color: hsl(14, 45%, 36%);
@@ -100,8 +103,8 @@ li span {
     margin-bottom: 10px;
 }
 
-hr{
-    margin: 20px 0 20px 0;
+hr {
+    margin: 20px 0;
     border: 1px solid hsl(30, 18%, 87%);
 }
 
@@ -119,13 +122,13 @@ hr{
     margin-bottom: 10px;
 }
 
-.nutriotion-title{
+.nutriotion-title {
     font-family: TitleFont;
     font-size: 24px;
     color: hsl(14, 45%, 36%);
 }
 
-.nutrition-synopsis{
+.nutrition-synopsis {
     font-family: TextFont;
     font-weight: 400;
     font-size: 14px;
@@ -167,9 +170,54 @@ hr{
     border-bottom: 1px solid hsl(30, 18%, 87%);
 }
 
-.attribution{
+.attribution {
     font-family: TitleFont;
 }
+
 .attribution a {
     color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 768px) {
+    .recipe-title {
+        font-size: 28px;
+    }
+
+    .central-white-overlay {
+        padding: 20px;
+        width: 100%;
+    }
+
+    .preparation-mode-title {
+        font-size: 16px;
+    }
+
+    .nutrition-table th {
+        padding-left: 10px;
+    }
+
+    .nutrition-table th,
+    .nutrition-table td {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .recipe-title {
+        font-size: 24px;
+    }
+
+    .recipe-synopsis,
+    .nutrition-synopsis {
+        font-size: 12px;
+    }
+
+    .preparation-mode-title {
+        font-size: 14px;
+    }
+
+    .nutrition-table th,
+    .nutrition-table td {
+        font-size: 14px;
+    }
 }
