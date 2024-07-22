@@ -1,0 +1,176 @@
+@font-face {
+  font-family: TitleFont;
+  src: url(../fonts/young-serif/YoungSerif-Regular.ttf);
+}
+@font-face {
+  font-family: TextFont;
+  src: url(../fonts/outfit/Outfit-VariableFont_wght.ttf);
+}
+body {
+  background-color: hsl(30, 54%, 90%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.central-white-overlay {
+  background-color: white;
+  border-radius: 10px;
+  padding: 40px 40px 40px;
+  height: auto;
+  width: 550px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.recipe-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  padding: 0 0 20px;
+}
+
+.recipe-title {
+  font-family: TitleFont;
+  font-weight: 400;
+  font-size: 34px;
+  color: hsl(24, 5%, 18%);
+  margin-bottom: 20px;
+}
+
+.recipe-synopsis {
+  font-family: TextFont;
+  font-weight: 400;
+  font-size: 14px;
+  color: hsl(30, 10%, 34%);
+  margin-bottom: 30px;
+}
+
+.preparation-mode {
+  background-color: hsl(330, 100%, 98%);
+  padding: 20px 20px 20px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+.preparation-mode-title {
+  color: hsl(332, 51%, 32%);
+  font-family: TextFont;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.preparation-mode li {
+  position: relative;
+  left: -20px;
+  color: hsl(332, 51%, 32%);
+  font-family: TextFont;
+  margin-bottom: 10px;
+}
+
+li span {
+  position: relative;
+  left: 25px;
+  color: hsl(30, 10%, 34%);
+  font-size: 14px;
+}
+
+.ingredients-title {
+  font-family: TitleFont;
+  font-size: 24px;
+  color: hsl(14, 45%, 36%);
+}
+
+.ingredients-body li {
+  position: relative;
+  left: -20px;
+  color: hsl(14, 45%, 36%);
+  font-family: TextFont;
+  margin-bottom: 10px;
+}
+
+hr {
+  margin: 20px 0 20px 0;
+  border: 1px solid hsl(30, 18%, 87%);
+}
+
+.instructions-title {
+  font-family: TitleFont;
+  font-size: 24px;
+  color: hsl(14, 45%, 36%);
+}
+
+.instructions-body li {
+  position: relative;
+  left: -15px;
+  color: hsl(14, 45%, 36%);
+  font-family: TextFont;
+  margin-bottom: 10px;
+}
+
+.nutriotion-title {
+  font-family: TitleFont;
+  font-size: 24px;
+  color: hsl(14, 45%, 36%);
+}
+
+.nutrition-synopsis {
+  font-family: TextFont;
+  font-weight: 400;
+  font-size: 14px;
+  color: hsl(30, 10%, 34%);
+  margin-bottom: 30px;
+}
+
+.nutrition-table {
+  width: 100%;
+  margin: auto;
+  border-collapse: collapse;
+}
+
+.nutrition-table th,
+.nutrition-table td {
+  padding: 10px;
+  text-align: left;
+  font-family: TextFont;
+}
+
+.nutrition-table th {
+  font-size: 18px;
+  color: hsl(30, 10%, 34%);
+  font-weight: 600;
+  padding-left: 30px;
+}
+
+.nutrition-table td {
+  font-size: 18px;
+}
+
+.nutrition-table .value {
+  text-align: left;
+  color: hsl(14, 45%, 36%);
+  font-weight: 900;
+}
+
+.nutrition-table tr:not(:last-child) {
+  border-bottom: 1px solid hsl(30, 18%, 87%);
+}
+
+.attribution {
+  font-family: TitleFont;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/*# sourceMappingURL=main.css.map */
